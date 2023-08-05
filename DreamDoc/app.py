@@ -26,7 +26,6 @@ def get_response():
     global lock
     global fact
     user_message = request.json.get('user_message')
-
     if lock != True:
         print("Describe block")
         embs = Search.get_embedding(user_message)
@@ -77,7 +76,7 @@ user: {user_message}
     
     # Simulate a simple chatbot response
     chatbot_response = response
-    
+    D += f"user:{user_message}\n{chatbot_response}"
     return jsonify({'chatbot_response': chatbot_response})
 
 if __name__ == '__main__':
