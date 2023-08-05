@@ -1,0 +1,83 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the chat container */
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the message boxes */
+.message {
+    max-width: 80%;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.user {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.bot {
+    background-color: #f0f0f0;
+    color: #333;
+    align-self: flex-end;
+}
+
+/* Style the cursor */
+.cursor {
+    width: 10px;
+    height: 20px;
+    background-color: #007bff;
+    display: none;
+    animation: cursorBlink 1s infinite;
+}
+
+@keyframes cursorBlink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Add your existing CSS styles */
+
+/* Style the input container */
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style the user input field */
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the send button */
+#send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
